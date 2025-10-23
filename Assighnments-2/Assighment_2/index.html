@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assighment_2</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        main {
+            width: 500px;
+            margin: 50px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        form {
+            display: flex;
+            gap: 5px;
+        }
+        form > input {
+            width: 50%;
+            padding: 10px 10px 10px;
+            outline: none;
+            color: #001219;
+            border: 1px solid #0a9396;
+            border-radius: 5px;
+        }
+        input::placeholder {
+            color: #0a949642;
+        }
+        form > input:focus {
+            border: 1px solid #001219;
+
+        }
+        div.current {
+            border-radius: 5px;
+            background-color: #0a9396;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .showClass {
+            border-radius: 5px;
+            background-color: #0a9396;
+            color: #fff;
+            padding: 10px;
+        }
+        .note {
+            margin-top: 10px;
+            padding: 5px;
+            text-align: center;
+            font-weight: bold;
+            color: #fff;
+        }
+        .list {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .list > div {
+            margin-top: 10px;
+            background-color: #001219;
+            color: #fff;
+            width: fit-content;
+            border-radius: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <form action="">
+            <input type="text" class="add" placeholder="Add Class">
+            <input type="text" class="remove" placeholder="Remove Class">
+        </form>
+        <div class="current element">Current Element</div>
+        <div class="showClass">
+            <p>Current Element Class List</p>
+            <div class="list">
+            </div>
+        </div>
+    </main>
+    <script src="Assighment_2.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assighment_1</title>
+    <script>
+        window.onload = function() {
+            let myLinks = document.getElementsByTagName("a");
+            for (let i = 0; i < myLinks.length; i++) {
+                myLinks[i].onclick = function (e) {
+                    if (myLinks[i].className !== "open" || myLinks[i].innerHTML !== "Elzero") {
+                        console.log(myLinks[i].className + " ==> " + myLinks[i].innerHTML);
+                        e.preventDefault();
+                    }
+                };
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Assighment_1 -->
+    
+    <a class="open" href="https://google.com">Google</a>
+    <a class="open" href="https://elzero.org">Elzero</a>
+    <a class="not" href="https://facebook.com">Facebook</a>
+    <a class="linked" href="https://linkedin.com">Elzero</a>
+    
+    <script src="Assighment_1.js"></script>
+</body>
+</html>
